@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import TopHeader from './Components/Header/topHeader'
+import {HashRouter as Router, Switch,Route} from "react-router-dom"
+import Interventions from './Pages/interventions'
+import Accueil from './Pages/acceuil'
+import Star from './Components/Design/Stars/stars'
+import IconAdd from './Components/Design/Icons/iconAdd'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <Router>
+      <div>
+        <header>
+          <TopHeader/>
+        </header>
+        <Star/>
+          <IconAdd/> 
+        <main className="container">
+          <Switch>
+            <Route exact path={'/'} component={Accueil}/>
+            <Route exact path={'/Interventions'} component={Interventions}/>
+          </Switch>
+        </main>
+      </div>
+    </Router>
+  )
 }
 
 export default App;

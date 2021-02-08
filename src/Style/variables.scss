@@ -1,0 +1,33 @@
+$mainColor : #4686EE;
+
+
+@mixin fontRoboto500 {
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.62%;
+    
+}
+
+
+@mixin flex($direction,$justify,$align) {
+    
+    display: flex;
+    flex-direction:$direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin navLinkVector {
+
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+     
+   
+}
+

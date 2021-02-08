@@ -1,0 +1,90 @@
+
+@mixin star($size,$left,$top,$background,$opacity,$deg) {
+
+  position: absolute;
+  z-index: -2;
+  width: $size;
+  height: $size;
+  left: $left;
+  top: $top;
+  background:$background;
+  opacity: $opacity;
+  transform: rotate($deg);
+}
+
+.star1 {
+
+  @include star(20.88px,113px,131px,#B5E0FA,0.9,-154.34deg)
+}
+  
+  .star2 {
+    
+    @include star(19px,211px,150px,#34D1BF,0.7,64.34deg)
+
+  }
+
+  .star3 {
+    
+    @include star(19px,1300px,600px,#34D1BF,0.7,64.34deg)
+
+  }
+
+  .star4 {
+
+    @include star(19px,1200px,570px,#34D1BF,0.4,-164.34deg)
+  }
+
+  .star5 {
+
+    @include star(19px,136px,225px,#34D1BF,0.4,-164.34deg)
+  }
+
+  .star6 {
+
+    @include star(9px,1206px,523px,#B5E0FA,0.6,-164.34deg)
+  }
+
+  .star7   {
+
+    @include star(9px,156px,265px,#B5E0FA,0.7,-164.34deg)
+  }
+
+  .star8  {
+
+    @include star(9px,1006px,530px,#B5E0FA,0.4,64.34deg)
+  }
+
+  .star9  {
+
+    @include star(21px,1096px,515px,#B5E0FA,0.7,154.34deg)
+  }
+
+  .star10  {
+
+    @include star(21px,113px,131px,#B5E0FA,0.8,154.34deg)
+  }
+
+  .star11  {
+
+    @include star(13px,1080px,536px,#34D1BF,0.5,64.34deg)
+   
+  }
+
+  .star12  {
+
+    @include star(13px,80px,170px,#34D1BF,0.5,64.34deg)
+   
+  }
+
+  .star13  {
+
+    @include star(9px,1055px,500px,#34D1BF,0.9,-164.34deg)
+   
+  }
+
+  .star14  {
+
+    @include star(13px,1100px,480px,#34D1BF,0.9,-164.34deg)
+   
+  }
+

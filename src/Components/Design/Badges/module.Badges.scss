@@ -1,0 +1,19 @@
+@import '../../../Style/variables.scss';
+
+.wrapEclipse {
+
+    position: absolute;
+    bottom: 43px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #F2994A;
+    @include flex(row,center,center);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 140.62%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
